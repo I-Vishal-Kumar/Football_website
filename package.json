@@ -20,6 +20,7 @@
     "jsonwebtoken": "^8.5.1",
     "jssha": "^3.3.0",
     "mongoose": "^6.7.1",
+    "node-fetch": "^2.6.12",
     "nodemailer": "^6.8.0",
     "request": "^2.88.2",
     "utc-to-indiantime": "^1.0.7"
