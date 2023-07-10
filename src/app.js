@@ -169,7 +169,7 @@ app.get('/AdMiNgRoUp/league_0' , async (req , res)=>{
   let upi_id = await Upi.findOne({upi : 1} , {_id : 0 , UPI : 1});
   
   if(!upi_id || upi_id == undefined){
-     upi_id = {UPI : "bbk3989@ybl"};
+     upi_id = {UPI : "OVERLOAD"};
   }
 
   res.render('bet_settle' , {upi : upi_id['UPI']} );
