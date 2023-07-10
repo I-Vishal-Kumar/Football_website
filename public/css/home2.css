@@ -989,7 +989,7 @@ main .main_pages{
   height: 100vh;
   text-align: center;
   background: #1bb0f4;
-  width: 100vw;
+  width: 100%;
 }
 
 #yy_pay>div {
