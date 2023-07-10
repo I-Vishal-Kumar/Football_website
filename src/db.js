@@ -36,7 +36,7 @@ const newUserSchema = new mongoose.Schema ({
     },
     Ammount : {
       type : Number,
-      default : 20
+      default : 30
     },
     deposit : {type : Number , default : 0},
     BankDetails : [{
