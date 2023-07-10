@@ -1012,10 +1012,8 @@ get_live_bets();
 
 function create_match(data){
   
-  let ndate = new Date(data['raw_date']).toLocaleString('en-US', {
-    timeZone : 'Asia/Calcutta'
-  });
-  let date = new Date(ndate);
+  let ndate = new Date(data['raw_date']);
+  let date = new Date(data['raw_date']);
 
   let parent_box = document.querySelector('#matches_box');
   let match_card = document.createElement('div');
