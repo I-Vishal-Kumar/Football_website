@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type = "image/x-icon" href="../photos/favicon.png">
+    <link rel="x-icon" href="../photos/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../../js/login2.js" defer ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ninety-six</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login</div>
+            <div class="title signup">Signup</div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form  class="login">
+                    <div class="field">
+                        <input name = 'l-name' type="text" placeholder="User id" required>
+                    </div>
+                    <div class="field">
+                        <input name = 'l-pass' type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input id="login_btn" type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                     <div class="signup-link">Support 24 x 7 <a target = "_blank" href="https://t.me/Chelseacs">Contact us.</a></div>
+                </form>
+                <form action="#" class="signup">
+                    <div class="field">
+                        <input class = "sign-input" type="text" placeholder="User name" required>
+                    </div>
+                    <div class="field">
+                        <input class = "sign-input" type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input class = "sign-input" type="password" placeholder="Confirm password" required>
+                    </div>
+                    <div class="field">
+                        <input name = 'inv-code' class = "sign-input" type="number" value="{{inv_code}}" placeholder="Invitation code" required>
+                    </div>
+                    <div id="otp_field" class="field">
+                        <input id = "contact_num" class = "sign-input" type="number" placeholder="Phone number" required>
+                        <button id="otp_btn">GET OTP</button>
+                    </div>
+                    <div class="field">
+                        <input class = "sign-input" type="number" placeholder="OTP" required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input id = "signup_btn" class = "sign-input" type="submit" value="Signup">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <section class="popup_page" id="popup_page">
+            <div>
+                <h3 id="popup_tip">LOADING...</h3>
+                <button id="popup_close_btn" type="button" autofocus="true">OK</button>
+            </div>
+        </section>
+</body>
+</html>
