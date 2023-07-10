@@ -389,18 +389,18 @@ class user_functions {
       
         if(vip_level === 0 && amount < 200 || vip_level === 0 && amount > 500){
           return res.send({status : "Your vip level is 0 your withdrawal limit is 200 - 500"});
-        }else if(vip_level === 1 && amount < 200 || vip_level === 1 && amount > 1200){
-          return res.send({status : "Your vip level is 1 your withdrawal limit is 200 - 1200"});
-        }else if(vip_level === 2 && amount < 200 || vip_level === 2 && amount > 3500){
-          return res.send({status : "Your vip level is 2 your withdrawal limit is 200 - 3500"});
+        }else if(vip_level === 1 && amount < 200 || vip_level === 1 && amount > 1000){
+          return res.send({status : "Your vip level is 1 your withdrawal limit is 200 - 1000"});
+        }else if(vip_level === 2 && amount < 200 || vip_level === 2 && amount > 3000){
+          return res.send({status : "Your vip level is 2 your withdrawal limit is 200 - 3000"});
         }
-        else if(vip_level === 3 && amount < 200 || vip_level === 3 && amount > 8500){
-          return res.send({status : "Your vip level is 3 your withdrawal limit is 200 - 8500"});
+        else if(vip_level === 3 && amount < 200 || vip_level === 3 && amount > 8000){
+          return res.send({status : "Your vip level is 3 your withdrawal limit is 200 - 8000"});
         }
-        else if(vip_level === 4 && amount < 200 || vip_level === 4 && amount > 30000){
-          return res.send({status : "Your vip level is 4 your withdrawal limit is 200 - 30000"});
-        }else if(vip_level === 5 && amount < 200 || vip_level === 5 && amount > 50000){
-          return res.send({status : "Your vip level is 5 your withdrawal limit is 200 - 50000"});
+        else if(vip_level === 4 && amount < 200 || vip_level === 4 && amount > 27000){
+          return res.send({status : "Your vip level is 4 your withdrawal limit is 200 - 27000"});
+        }else if(vip_level === 5 && amount < 200 || vip_level === 5 && amount > 51000){
+          return res.send({status : "Your vip level is 5 your withdrawal limit is 200 - 51000"});
         }
 
       }
