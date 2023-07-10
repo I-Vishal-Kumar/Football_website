@@ -568,9 +568,9 @@ class admin_function{
 
           let new_amount = parseFloat( ( bet_ammount0 + (bet_ammount0/100 * profit0) ).toFixed(2) );
           let new_profit = parseFloat(parseFloat(bet_ammount0/100 * profit0).toFixed(3));
-          let level1_rebade = parseFloat( (new_profit/100 * 12).toFixed(2) ) ;
+          let level1_rebade = parseFloat( (new_profit/100 * 10).toFixed(2) ) ;
           let level2_rebade = parseFloat( (new_profit/100 * 8).toFixed(2) ) ;
-          let level3_rebade = parseFloat( (new_profit/100 * 5).toFixed(2) );
+          let level3_rebade = parseFloat( (new_profit/100 * 4).toFixed(2) );
           let level4_rebade = parseFloat( (new_profit/100 * 2).toFixed(2) );
           let level_5_6_rebade = parseFloat((new_profit/100 * 1).toFixed(2) );
         
@@ -587,6 +587,13 @@ class admin_function{
                   }
                 },{new : true}
               );
+              
+              await Other.create({
+                date : parsed_date,
+                Ammount : level1_rebade,
+                inv : parseInt(level0['parent'])
+              });
+
                settled += `'1st->' ${level0['parent'] } ,rebade =  ${level1_rebade}`;
             if(level1_user && level1_user !== undefined){
                 
@@ -603,6 +610,13 @@ class admin_function{
                   },{new : true}
                   
                   );
+                  
+              await Other.create({
+                date : parsed_date,
+                Ammount : level2_rebade,
+                inv : parseInt(level1_user['parent'])
+              });
+
                    settled += `'2nd->' ${level1_user['parent'] } ,rebade =  ${level2_rebade}`;
                 if(level2_user && level2_user !== undefined){
                    
@@ -619,6 +633,11 @@ class admin_function{
                       },{new : true}
                             
                       );
+                      await Other.create({
+                        date : parsed_date,
+                        Ammount : level3_rebade,
+                        inv : parseInt(level2_user['parent'])
+                      });
                    settled += `'3rd->' ${level2_user['parent'] } ,rebade =  ${level3_rebade}`;
                 if(level3_user && level3_user !== undefined){
                    
@@ -634,6 +653,11 @@ class admin_function{
                         }
                       },{new : true}
                       );
+                      await Other.create({
+                        date : parsed_date,
+                        Ammount : level4_rebade,
+                        inv : parseInt(level3_user['parent'])
+                      });
                    settled += `'4th->' ${level3_user['parent'] } ,rebade =  ${level4_rebade}`;
                  if(level4_user && level4_user !== undefined){
                    
@@ -649,7 +673,13 @@ class admin_function{
                         }
                       },{new : true}
                       );
-            
+
+                      await Other.create({
+                        date : parsed_date,
+                        Ammount : level_5_6_rebade,
+                        inv : parseInt(level4_user['parent'])
+                      });
+
                    settled += `'5th->' ${level5_user['parent'] } ,rebade =  ${level_5_6_rebade}`;
 
                 if(level5_user && level5_user !== undefined){
@@ -666,7 +696,11 @@ class admin_function{
                               }
                             },{new : true}
                       );
-                      
+                      await Other.create({
+                        date : parsed_date,
+                        Ammount : level_5_6_rebade,
+                        inv : parseInt(level5_user['parent'])
+                      });
                    settled += `'6th->' ${level5_user['parent'] } ,rebade =  ${level_5_6_rebade}`;
 
                    }
