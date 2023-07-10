@@ -1013,7 +1013,7 @@ get_live_bets();
 function create_match(data){
   
   let ndate = new Date(data['raw_date']);
-  let date = new Date(data['raw_date']);
+  let date = new Date(data['raw_date'].slice(0 , -1));
 
   let parent_box = document.querySelector('#matches_box');
   let match_card = document.createElement('div');
