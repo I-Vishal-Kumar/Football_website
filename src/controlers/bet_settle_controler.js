@@ -815,45 +815,45 @@ class admin_function{
       let vip = 0;
 
 
-        if( amount >= 1000 && amount <=3999 ){
+        if( amount >= 1000 && amount <=3200 ){
            user_profit = 60;
            parent_profit = 40;
          }
-        else if( amount >= 4000 && amount <= 8999 ){
+        else if( amount >= 8500 && amount <= 18999 ){
           user_profit = 120;
           parent_profit = 100;
         }
-        else if( amount >= 9000 && amount <= 17999){
+        else if( amount >= 19000 && amount <= 52999){
           user_profit = 400;
           parent_profit = 350;
         }
-        else if( amount >= 18000 &&  amount <= 40999){
+        else if( amount >= 53000 &&  amount <= 10999){
           user_profit = 800;
           parent_profit = 900;
         }
-        else if( amount >= 41000 && amount <= 85999){
+        else if( amount >= 110000 && amount <= 30000){
           user_profit   = 2800;
           parent_profit = 1500;
         }
-        else if(amount > 85999 ){
+        else if(amount > 300000 ){
           user_profit = 7000;
           parent_profit = 6200;
         }
 
         // setting the vip levels;
-        if( amount >= 2600 && amount <= 7999){
+        if( amount >= 3200 && amount <= 8499){
           vip = 1;
         }
-        else if( amount >= 8000 && amount <= 16999){
+        else if( amount >= 8500 && amount <= 18999){
           vip = 2;
         }
-        else if( amount >= 17000 && amount <= 52999){
+        else if( amount >= 19000 && amount <= 52999){
           vip = 3;
         }
-        else if( amount >=53000 && amount <= 104999){
+        else if( amount >=53000 && amount <= 109999){
           vip = 4;
         }
-        else if( amount >= 105000){
+        else if( amount >= 110000){
           vip = 5;
         }
 
