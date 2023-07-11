@@ -85,7 +85,7 @@ const newUserSchema = new mongoose.Schema ({
     },
     promotion_bonus : {
       type : Number,
-      default : 20
+      default : 30
     },
     avatar : {
       type : Number,
