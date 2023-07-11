@@ -24,7 +24,7 @@ class user_functions {
       }
     }
 
-      let message = `Your OTP for chesla fb verification is ${number}`
+      let message = `Your OTP for ninety-six verification is ${number}`
       let options = {
         authorization:
           "X82I7elMQ6if9yR03EcJpqOU1BzGnbdxuVvTLAmoN4tahgHYZsQVzAOpHZa6GvR7EXuBjThL1bfnD9dM",
