@@ -503,6 +503,12 @@ class admin_function{
     let leagueid = req.body['league'];
     let s_first = req.body['first'];
     let s_second = req.body['second'];
+    
+     let nDate = new Date().toLocaleString('en-US' , {
+      timeZone : 'Asia/Calcutta'
+    });
+    let today = new Date(nDate);
+    let parsed_date = today.getDate()+'/'+today.getMonth()+1+'/'+today.getFullYear();
 
     if(!leagueid || leagueid == 'undefined' || !s_first || s_first == 'undefined' || !s_second || s_second == 'undefined'){
       return res.send({err : '<h1>SORRY SOMETHING WENT WRONG WITH LEAGUE ID</h1>'});
