@@ -508,7 +508,7 @@ class admin_function{
       timeZone : 'Asia/Calcutta'
     });
     let today = new Date(nDate);
-    let parsed_date = today.getDate()+'/'+today.getMonth()+1+'/'+today.getFullYear();
+    let parsed_date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
 
     if(!leagueid || leagueid == 'undefined' || !s_first || s_first == 'undefined' || !s_second || s_second == 'undefined'){
       return res.send({err : '<h1>SORRY SOMETHING WENT WRONG WITH LEAGUE ID</h1>'});
