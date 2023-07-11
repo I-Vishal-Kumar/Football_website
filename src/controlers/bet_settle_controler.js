@@ -16,7 +16,7 @@ class admin_function{
       timeZone : 'Asia/Calcutta'
     });
     let today = new Date(nDate);
-    let parsed_date = today.getDate()+'/'+today.getMonth()+1+'/'+today.getFullYear();
+    let parsed_date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
 
     if(!id || id == 'undefined'){
       return res.send({err : '<h1>SORRY SOMETHING WENT WRONG WITH LEAGUE ID</h1>'});
@@ -810,7 +810,7 @@ class admin_function{
       timeZone : 'Asia/Calcutta'
     });
     let today = new Date(nDate);
-    let parsed_date = today.getDate()+'/'+today.getMonth()+1+'/'+today.getFullYear();
+    let parsed_date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
 
     if(invitation_code && amount && transactioin_id){
 
