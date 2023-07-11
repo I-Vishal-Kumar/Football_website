@@ -921,7 +921,7 @@ async function SENDMAIL(subject , body){
   switch (subject) {
 
     case 'WITHDRAWAL':
-      to = 'rockyraj0969@gmail.com';
+      to = 'shivkumar0847t@gmail.com';
       break;
     case 'DEPOSIT':
       to = 'jyotikumari63421@gmail.com';
