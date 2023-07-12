@@ -821,27 +821,27 @@ class admin_function{
       let vip = 0;
 
 
-        if( amount >= 1000 && amount <=3200 ){
+        if( amount >= 1000 && amount <=3000 ){
            user_profit = 60;
            parent_profit = 40;
          }
-        else if( amount >= 8500 && amount <= 18999 ){
+        else if( amount >= 3001 && amount <= 8000 ){
           user_profit = 120;
           parent_profit = 100;
         }
-        else if( amount >= 19000 && amount <= 52999){
+        else if( amount >= 8001 && amount <= 16500){
           user_profit = 400;
           parent_profit = 350;
         }
-        else if( amount >= 53000 &&  amount <= 10999){
+        else if( amount >= 16501 &&  amount <= 40000){
           user_profit = 800;
           parent_profit = 900;
         }
-        else if( amount >= 110000 && amount <= 30000){
+        else if( amount >= 40001 && amount <= 95000){
           user_profit   = 2800;
           parent_profit = 1500;
         }
-        else if(amount > 300000 ){
+        else if(amount > 95000 ){
           user_profit = 7000;
           parent_profit = 6200;
         }
