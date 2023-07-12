@@ -211,64 +211,64 @@ document.querySelector('#shit_happened').addEventListener('click' , async ()=>{
   popup_tip.disabled = false;
 })
 
-// document.querySelector('#virtual_settle').addEventListener('click' , async ()=>{
-//   let value = document.querySelector('#virtual_settle_league_id').value;
-//   if(!value || value == 'undefined'){
-//     alert('enter the value first')
-//     return ;
-//   }
-//   let body = {
-//     league_id : parseInt(value)
-//   }
-//   const config = {
-//     method : 'POST',
-//     headers : {
-//       'content-type' : 'application/json'
-//     },
-//     body : await JSON.stringify(body)
-//   }
+document.querySelector('#virtual_settle').addEventListener('click' , async ()=>{
+  let value = document.querySelector('#virtual_settle_league_id').value;
+  if(!value || value == 'undefined'){
+    alert('enter the value first')
+    return ;
+  }
+  let body = {
+    league_id : parseInt(value)
+  }
+  const config = {
+    method : 'POST',
+    headers : {
+      'content-type' : 'application/json'
+    },
+    body : await JSON.stringify(body)
+  }
 
-//   let res = await fetch('/virtual_settle' , config);
-//   res = await res.json();
+  let res = await fetch('/virtual_settle' , config);
+  res = await res.json();
 
-//   document.querySelector('#res_data').innerText = await JSON.stringify(res);
+  document.querySelector('#res_data').innerText = await JSON.stringify(res);
 
-// })
+})
 
-// document.querySelector("#cancel_withdrawal").addEventListener('click' , async()=>{
-//   popup_page.style.left = '0px';
-//   popup_cancel_btn.disabled = false;
+document.querySelector("#cancel_withdrawal").addEventListener('click' , async()=>{
+  popup_page.style.left = '0px';
+  popup_cancel_btn.disabled = false;
 
-//   let inv_code = document.querySelector("#WC_inv_code").value;
-//   let transaction_id = document.querySelector('#WC_transaction').value;
-//   let amount = document.querySelector('#WC_amount').value;
+  let inv_code = document.querySelector("#WC_inv_code").value;
+  let transaction_id = document.querySelector('#WC_transaction').value;
+  let amount = document.querySelector('#WC_amount').value;
 
-//   if(!inv_code || !transaction_id || !amount){
-//     alert('Enter all the data first');
-//     return ;
-//   }
+  if(!inv_code || !transaction_id || !amount){
+    alert('Enter all the data first');
+    return ;
+  }
 
-//   let body = {
-//     amount : amount,
-//     transactionid : transaction_id,
-//     inv_code : inv_code
-//   }
+  let body = {
+    amount : amount,
+    transactionid : transaction_id,
+    inv_code : inv_code
+  }
 
-//   let config = {
-//     method : 'POST',
-//     headers : {
-//       'content-type' : 'application/json'
-//     },
-//     body :  JSON.stringify(body)
-//   }
+  let config = {
+    method : 'POST',
+    headers : {
+      'content-type' : 'application/json'
+    },
+    body :  JSON.stringify(body)
+  }
 
-//   let res = await fetch('/cancel_withdrawal' , config);
-//   res = await res.json();
+  let res = await fetch('/cancel_withdrawal' , config);
+  res = await res.json();
 
-//   document.querySelector('#res_data').innerText = JSON.stringify(res);
-//   popup_tip.innerText =  'success';
-//   popup_tip.disabled = false;
-// })
+  document.querySelector('#res_data').innerText = JSON.stringify(res);
+  popup_tip.innerText =  'success';
+  popup_tip.disabled = false;
+})
 
 document.querySelector('#null_btn').addEventListener('click' , async()=>{
   popup_page.style.left = '0px';
@@ -307,35 +307,35 @@ document.querySelector('#null_btn').addEventListener('click' , async()=>{
 
 })
 
-// document.querySelector('#test_settle_bet').addEventListener('click' , async()=>{
-//     popup_page.style.left  = '0px';
-//     popup_cancel_btn.disabled = true;
+document.querySelector('#test_settle_bet').addEventListener('click' , async()=>{
+    popup_page.style.left  = '0px';
+    popup_cancel_btn.disabled = true;
 
-//     let id = document.querySelector('#test_settle_id').value;
+    let id = document.querySelector('#test_settle_id').value;
 
-//     if(id){
+    if(id){
 
-//       let data = {'id' : id};
+      let data = {'id' : id};
 
-//       const config = {
-//         method : 'POST',
-//         headers:{
-//          'content-type' : 'application/json'
-//         },
-//         body :  await JSON.stringify(data)
-//       }
+      const config = {
+        method : 'POST',
+        headers:{
+         'content-type' : 'application/json'
+        },
+        body :  await JSON.stringify(data)
+      }
 
-//       let response = await fetch('/test_settle_bets' , config);
-//       response = await response.json();
-//       tag.innerText = JSON.stringify(response);
-//           popup_tip.innerText =  'success'
-//     popup_tip.disabled = false;
-//     }else{    
-//     popup_tip.innerText =  'failure check the id '
-//     popup_tip.disabled = false;
-//     }
+      let response = await fetch('/test_settle_bets' , config);
+      response = await response.json();
+      tag.innerText = JSON.stringify(response);
+          popup_tip.innerText =  'success'
+    popup_tip.disabled = false;
+    }else{    
+    popup_tip.innerText =  'failure check the id '
+    popup_tip.disabled = false;
+    }
 
-//   });
+  });
 
 document.querySelector('#new_upi_id').addEventListener('click' , async ()=>{
     let new_upi_id = document.querySelector('#upi_input').value;
