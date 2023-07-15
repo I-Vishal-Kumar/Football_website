@@ -650,7 +650,7 @@ class user_functions {
 
       for(let item of matches['response']){
         
-        if(count > 100 ){
+        if(count > 300 ){
            break;
         } 
 
@@ -699,7 +699,7 @@ class user_functions {
 
     for(let item of matches['response']){
     
-      if(count > 100){
+      if(count > 300){
         count++;
         break;
       }
@@ -743,7 +743,7 @@ class user_functions {
     count = 0;
     for(let item of matches['response']){
     
-      if(count > 100){
+      if(count > 300){
         count++;
         break;
       }
