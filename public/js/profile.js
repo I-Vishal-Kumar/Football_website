@@ -76,7 +76,7 @@ window.addEventListener('load' , ()=>{
       if(i !== 4){
         selectAll('.profile_pops')[i].style.left = '0vw';
       }else{
-        window.open('https://t.me/CustomerService_96', '_blank');
+        window.open('https://t.me/customer_96_service', '_blank');
       }
     })
   });
